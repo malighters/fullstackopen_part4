@@ -1,5 +1,6 @@
+/* eslint-disable no-prototype-builtins */
 const dummy = (blogs) => {
-  return 1;
+  return 1
 }
 
 const totalLikes = (blogs) => {
@@ -10,8 +11,8 @@ const totalLikes = (blogs) => {
 const favoriteBlog = (blogs) => {
   const max = blogs.reduce((previous, current) => ( (previous.likes > current.likes) ? previous : current),0)
   return {
-    title:max.title, 
-    author: max.author, 
+    title:max.title,
+    author: max.author,
     likes: max.likes
   }
 }
@@ -38,7 +39,7 @@ const mostLikes = (blogs) => {
 
 module.exports = {
   dummy,
-  totalLikes, 
+  totalLikes,
   favoriteBlog,
   mostBlogs,
   mostLikes
